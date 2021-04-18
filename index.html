@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Todo App</title>
+		<title>Rock, Paper, Scissors</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet"
 		type="text/css"
@@ -9,9 +9,12 @@
 	</head>
 	<body>
 		<h1>Rock, Paper, Scissors</h1>
-		<button onClick="rock()"></button>
-		<button onClick="paper()"></button>
-		<button onClick="scissors()"></button>
+		<button onClick="let choice = [2, 'rock'];">Rock</button>
+		<button onClick="let choice = [0, 'paper'];">Paper</button>
+		<button onClick="let choice = [1,
+			'scissors'];">Scissors</button>
+		<br>
+		<button onClick="submit(choice)"></button>
 		<script src="index.js"></script>
 	</body>
 </html>

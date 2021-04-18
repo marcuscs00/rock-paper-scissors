@@ -1,9 +1,20 @@
-function rock() {
-}
+function submit(c) {
+	opponentsChoice =;
+	if (c === 'paper' && opponentsChoice === 'rock') {
+		// Declare user winner
+	}
 
-function paper() {
-}
+	if (opponentsChoice === 'paper' && c === 'rock') {
+		// Declare opponent winner
+	}
 
-function scissors() {
+	if (c > opponentsChoice) {
+		// Declare user winner;
+	}
+
+	if (c < opponentsChoice) {
+		// Declare opponent winner;
+	}
+
 }
 
