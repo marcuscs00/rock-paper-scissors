@@ -1,10 +1,10 @@
 function numberProcedure() {
 	if (c > opponentsChoice) {
-		// Declare user winner;
+		.innerHTML
 	}
 
 	if (c < opponentsChoice) {
-		// Declare opponent winner;
+		.innerHTML
 	}
 }
 
@@ -22,9 +22,8 @@ function submit(c) {
 	} else {
 		numberProcedure();
 	}
-
-
-	
-
 }
+
+submit(choice);
+
 
