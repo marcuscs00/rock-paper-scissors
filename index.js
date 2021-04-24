@@ -12,7 +12,7 @@ function numberProcedure() {
 }
 
 function submit(c) {
-	opponentsChoice = // Select a random selection from an array
+	// TODO: Make opponents choice on a random number
 
 	if (c === 'paper' && opponentsChoice === 'rock') {
 		resultSpace.innerHTML = `${c} won`;
