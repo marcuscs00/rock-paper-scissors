@@ -1,10 +1,13 @@
+let opSpace = getElementById('op-space');
+let resultSpace = getElementById('result-space');
+
 function numberProcedure() {
 	if (c > opponentsChoice) {
-		.innerHTML
+		resultSpace.innerHTML = `${c} won`;
 	}
 
 	if (c < opponentsChoice) {
-		.innerHTML
+		resultSpace.innerHTML = `${opponentsChoice} won`;
 	}
 }
 
@@ -12,18 +15,15 @@ function submit(c) {
 	opponentsChoice = // Select a random selection from an array
 
 	if (c === 'paper' && opponentsChoice === 'rock') {
-		// Declare user winner
+		resultSpace.innerHTML = `${c} won`;
 	} else {
 		numberProcedure();
 	}
 
 	if (opponentsChoice === 'paper' && c === 'rock') {
-		// Declare opponent winner
+		resultSpace.innerHTML = `${opponentsChoice} won`;
 	} else {
 		numberProcedure();
 	}
 }
-
-submit(choice);
-
 
