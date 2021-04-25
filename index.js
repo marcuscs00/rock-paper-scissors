@@ -20,7 +20,7 @@ function numberProcedure() {
 }
 
 
-	let opponentsNum = getRndInteger(0, 2);
+	let opponentsNum = getRndInteger(0, 3);
 	let opponentsChoice = choiceArray[opponentsNum];
 
 	opSpace.innerHTML = `opponent chose ${opponentsChoice[1]}`;
