@@ -17,6 +17,10 @@ function numberProcedure() {
 	if (c[0] < opponentsChoice[0]) {
 		resultSpace.innerHTML = `${opponentsChoice[1]} won`;
 	}
+
+	if (c[0] === opponentsChoice[0]) {
+		resultSpace.innerHTML = 'it\'s a tie!';
+	}
 }
 
 
