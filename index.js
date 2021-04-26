@@ -32,13 +32,13 @@ function numberProcedure() {
 	playerSpace.innerHTML = `you chose ${c[1]}`;
 
 	if (c[1] === 'paper' && opponentsChoice[1] === 'rock') {
-		resultSpace.innerHTML = `${c[1]} won`;
+		resultSpace.innerHTML = `You win!`;
 	} else {
 		numberProcedure();
 	}
 
 	if (opponentsChoice[1] === 'paper' && c[1] === 'rock') {
-		resultSpace.innerHTML = `${opponentsChoice[1]} won`;
+		resultSpace.innerHTML = `Opponent wins!`;
 	} else {
 		numberProcedure();
 	}
