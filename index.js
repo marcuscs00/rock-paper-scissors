@@ -1,6 +1,7 @@
 let choiceArray = [[0, 'paper'], [1, 'scissors'], [2, 'rock']];
 
 let opSpace = document.getElementById('op-space');
+let playerSpace = document.getElementById('player-space');
 let resultSpace = document.getElementById('result-space');
 
 function getRndInteger(min, max) {
@@ -28,6 +29,7 @@ function numberProcedure() {
 	let opponentsChoice = choiceArray[opponentsNum];
 
 	opSpace.innerHTML = `opponent chose ${opponentsChoice[1]}`;
+	playerSpace.innerHTML = `you chose ${c[1]}`;
 
 	if (c[1] === 'paper' && opponentsChoice[1] === 'rock') {
 		resultSpace.innerHTML = `${c[1]} won`;
