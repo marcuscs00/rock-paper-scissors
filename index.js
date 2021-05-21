@@ -1,30 +1,27 @@
+//many variables
 let choiceArray = [[0, 'paper'], [1, 'scissors'], [2, 'rock']];
-
 let opSpace = document.getElementById('op-space');
 let playerSpace = document.getElementById('player-space');
 let resultSpace = document.getElementById('result-space');
 
+//function that gets a random intiger from max to min
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
+//main submit function 
 function submit(c) {
-function numberProcedure() {
+   function numberProcedure() {
 	// TODO: put somewhere else to account for c;
 	if (c[0] > opponentsChoice[0]) {
 		resultSpace.innerHTML = `${c[1]} won`;
-	}
-
-	if (c[0] < opponentsChoice[0]) {
+	}if (c[0] < opponentsChoice[0]) {
 		resultSpace.innerHTML = `${opponentsChoice[1]} won`;
-	}
-
-	if (c[0] === opponentsChoice[0]) {
+	}if (c[0] === opponentsChoice[0]) {
 		resultSpace.innerHTML = 'it\'s a tie!';
 	}
-}
-
-
+  }
+	//secondery var's
 	let opponentsNum = getRndInteger(0, 3);
 	let opponentsChoice = choiceArray[opponentsNum];
 
